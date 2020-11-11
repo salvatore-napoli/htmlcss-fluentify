@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .floated {
@@ -19,9 +20,26 @@
   display: inline-block;
 }
 
+.centered-block {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .white-text {
   color: white;
 }
+
+.link-style {
+  font-size: 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #8AC21F;
+  border-radius: 5px;
+}
+
 /* end Regole generali, font e utility */
 
 /* Styling */
@@ -30,60 +48,84 @@
   width: 1200px;
 }
 
-header > nav {
-  text-align: center;
+header {
+  background-color: #143A63;
+}
+
+.header-top-middle-container {
+  position: relative;
+}
+
+.header-top-middle-container > nav {
   padding-top: 10px;
 }
 
-header > nav .logo {
+.header-top-middle-container > nav .logo {
   padding-right: 60px;
   vertical-align: -10px;
 }
 
-header > nav ul {
+.header-top-middle-container > nav ul {
   list-style-type: none;
+    text-align: center;
 }
 
-header > nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 9px;
+.header-top-middle-container > nav ul li a {
   padding-right: 20px;
 }
 
-header > nav .center-menu {
+.header-top-middle-container > nav .center-menu {
   padding-right: 90px;
 }
 
-header > nav .right-menu li:nth-child(2) {
+.header-top-middle-container > nav .right-menu li:nth-child(2) {
   padding-right: 15px;
 }
 
-header > nav .right-menu .login-button {
-  padding: 8px 25px;
+.header-top-middle-container > nav .right-menu .login-button {
+  padding: 8px 30px;
   border: 1px solid white;
   border-radius: 5px;
 }
 
-header > nav .right-menu .plan-button {
-  padding: 7.5px;
-  background-color: #8AC21F;
-  border-radius: 5px;
+.header-top-middle-container > nav .right-menu .plan-button {
+  padding: 7.5px 20px;
 }
 
-header .main-header {
+.central-header {
   height: 500px;
 }
 
-header .main-header .main-description {
-  margin: 0 auto;
+.central-header .logo-bg {
+  height: 75%;
+  width: 76%;
+  background-image: url("../img/men.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-header > nav, header .main-header {
-  background-color: #143A63;
+.central-header .header-description {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 470px;
 }
 
-header .lower-header {
+h1 {
+  font-size: 45px;
+}
+
+.header-button {
+  padding-top: 45px;
+}
+
+.central-header .header-description .plan-button {
+  padding: 20px 30px;
+}
+
+.lower-header {
   height: 150px;
   background-color: grey;
 }
