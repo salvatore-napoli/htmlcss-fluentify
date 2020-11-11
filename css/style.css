@@ -6,8 +6,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.floated {
+.float-l {
   float: left;
+}
+
+.float-r {
+  float: right;
 }
 
 .clearfix::after {
@@ -65,6 +69,10 @@
   margin: 20px auto;
 }
 
+.page-divider {
+  background-color: lightgrey;
+}
+
 /* end Regole generali, font e utility */
 
 /* Styling */
@@ -78,7 +86,7 @@
   border-bottom: 1px solid lightgrey;
   width: 96%;
   position: absolute;
-  top: 59.42%;
+  top: 64.5%;
   margin: 0 auto;
 }
 
@@ -160,7 +168,6 @@ h1 {
 
 .lower-header {
   height: 150px;
-  background-color: lightgrey;
   position: relative;
 }
 
@@ -171,7 +178,6 @@ h1 {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-
 
 .upper-main {
   margin: 40px 0 80px;
@@ -220,8 +226,46 @@ h1 {
 }
 
 footer {
-  background-color: yellow;
   height: 200px;
+}
+
+.footer-container {
+  line-height: 200px;
+}
+
+.form-element {
+  padding-right: 20px;
+}
+
+.form-select-element {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 150px;
+  margin-right: 20px;
+  background: transparent;
+}
+
+.footer-buttons {
+  position: relative;
+  height: 123px;
+}
+
+.footer-buttons > .plan-button {
+  display: block;
+  border: none;
+}
+
+.footer-buttons > .plan-button:first-child {
+  padding: 20px;
+}
+
+.footer-buttons > .plan-button:nth-child(2) {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /* end Styling */
