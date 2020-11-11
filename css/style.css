@@ -52,12 +52,34 @@
   padding-bottom: 10px;
 }
 
+.h2-green {
+  padding-bottom: 10px;
+  color: #8AC21F;
+}
+
+.h2-green::after {
+  content: '';
+  display: inherit;
+  width: 25%;
+  border-bottom: 1px solid black;
+  margin: 20px auto;
+}
+
 /* end Regole generali, font e utility */
 
 /* Styling */
 .container {
   margin: 0 auto;
   width: 1200px;
+  position: relative;
+}
+
+.border-middle{
+  border-bottom: 1px solid lightgrey;
+  width: 96%;
+  position: absolute;
+  top: 59.42%;
+  margin: 0 auto;
 }
 
 header {
@@ -151,37 +173,37 @@ h1 {
 }
 
 main {
-  margin: 40px 0;
   height: 1000px;
 }
 
 .upper-main {
-  height: 50%;
+  margin: 40px 0 80px;
 }
 
-.upper-main section:first-child{
-  background-color: black;
+.upper-main section:first-child .upper-main-imgs, .upper-main section:nth-child(2) .upper-main-imgs, .upper-main section:nth-child(3) .upper-main-imgs {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
-.upper-main section:nth-child(2) {
-  background-color: orange;
+.upper-main-img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
-.upper-main section:nth-child(3) {
-  background-color: purple;
+.upper-main section:first-child, .upper-main section:nth-child(2) {
+  margin-right: 30px;
 }
 
-.upper-main section:first-child, .upper-main section:nth-child(2), .upper-main section:nth-child(3), .lower-main .placement-test {
-  height: 500px;
-  width: 25%;
-}
-
-.lower-main {
-  height: 50%;
+.upper-main section:first-child, .upper-main section:nth-child(2), .upper-main section:nth-child(3) {
+  width: calc(100% / 3 - 30px);
 }
 
 .lower-main .placement-test {
   background-color: pink;
+    height: 500px;
+    width: 30%;
 }
 
 footer {
