@@ -14,6 +14,14 @@
   display: table;
   clear: both;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.white-text {
+  color: white;
+}
 /* end Regole generali, font e utility */
 
 /* Styling */
@@ -22,24 +30,60 @@
   width: 1200px;
 }
 
-header {
-  height: 650px;
-  width: 100%;
-}
-
 header > nav {
-  height: 100px;
+  text-align: center;
+  padding-top: 10px;
 }
 
-header div.main-header {
-  height: 400px;
+header > nav .logo {
+  padding-right: 60px;
+  vertical-align: -10px;
 }
 
-header > nav, header div.main-header {
-  background-color: blue;
+header > nav ul {
+  list-style-type: none;
 }
 
-header div.lower-header {
+header > nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 9px;
+  padding-right: 20px;
+}
+
+header > nav .center-menu {
+  padding-right: 90px;
+}
+
+header > nav .right-menu li:nth-child(2) {
+  padding-right: 15px;
+}
+
+header > nav .right-menu .login-button {
+  padding: 8px 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+header > nav .right-menu .plan-button {
+  padding: 7.5px;
+  background-color: #8AC21F;
+  border-radius: 5px;
+}
+
+header .main-header {
+  height: 500px;
+}
+
+header .main-header .main-description {
+  margin: 0 auto;
+}
+
+header > nav, header .main-header {
+  background-color: #143A63;
+}
+
+header .lower-header {
   height: 150px;
   background-color: grey;
 }
