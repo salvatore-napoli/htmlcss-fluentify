@@ -4,8 +4,83 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.floated {
+  float: left;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 /* end Regole generali, font e utility */
 
 /* Styling */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  height: 650px;
+  width: 100%;
+}
+
+header > nav {
+  height: 100px;
+}
+
+header div.main-header {
+  height: 400px;
+}
+
+header > nav, header div.main-header {
+  background-color: blue;
+}
+
+header div.lower-header {
+  height: 150px;
+  background-color: grey;
+}
+
+main {
+  margin: 40px 0;
+  height: 1000px;
+}
+
+.upper-main {
+  height: 50%;
+}
+
+.upper-main section:first-child{
+  background-color: black;
+}
+
+.upper-main section:nth-child(2) {
+  background-color: orange;
+}
+
+.upper-main section:nth-child(3) {
+  background-color: purple;
+}
+
+.upper-main section:first-child, .upper-main section:nth-child(2), .upper-main section:nth-child(3), .lower-main .placement-test {
+  height: 500px;
+  width: 25%;
+}
+
+.lower-main {
+  height: 50%;
+}
+
+.lower-main .placement-test {
+  background-color: pink;
+}
+
+footer {
+  background-color: yellow;
+  height: 200px;
+}
 
 /* end Styling */
